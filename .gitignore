@@ -1,0 +1,120 @@
+# Build outputs
+*.exe
+*.exe~
+*.test
+*.build
+*_test.exe
+agent_test.exe
+backend_test.exe
+agent_verify.exe
+backend_verify.exe
+*.out
+*.bin
+
+# Go
+vendor/
+*.mod
+*.sum
+**/vendor/
+**/vendor/**
+go.sum
+.idea/
+.vscode/
+
+# Node.js
+node_modules/
+.pnpm-store/
+.next/
+out/
+build/
+dist/
+.nuxt/
+.cache/
+*.node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+.venv*/
+
+# Docker
+*.dockerfile
+Dockerfile.*
+docker-compose*.yml
+.dockerignore
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db-wal
+*.db-shm
+
+# Logs
+*.log
+*.log.*
+logs/
+log/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+~*$
+
+# Test artifacts
+coverage/
+.nyc_output/
+*.test.log
+
+# Windows
+$RECYCLE.BIN/
+*.lnk
+*.pid
+*.lock
+
+# Kubernetes
+*.yaml.lock
+.kubectl/
+
+# Miscellaneous
+*.bak
+*.orig
+*.rej
+.result
+.result-*
+results/
+test-output/
+test-results/
+
+# Don't ignore the following (needed for builds)
+# !.gitkeep
+# !.gitattributes
+
+# Keep these in git
+!.gitignore
+!README.md
+!install.ps1
+!wrangler.toml
+!Dockerfile
+!pnpm-workspace.yaml
