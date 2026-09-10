@@ -2,6 +2,8 @@
 
 Complete C2 infrastructure for authorized cybersecurity competitions.
 
+**Repository:** https://github.com/422442/Logger.git
+
 ## Architecture
 
 - **Agent** (Go Windows Service) - Keylogging via `SetWindowsHookEx(WH_KEYBOARD_LL)` with AES-256-GCM encryption
