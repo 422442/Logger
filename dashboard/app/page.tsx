@@ -38,7 +38,7 @@ export default function Dashboard() {
 
   const connectWS = useCallback(() => {
     setWsStatus("connecting");
-    const wsUrl = BACKEND_WS || `ws://${window.location.host}/ws`;
+    const wsUrl = BACKEND_WS || `wss://quantum-c2-worker.ns8pc1.workers.dev`;
     const ws = new WebSocket(wsUrl);
     wsRef.current = ws;
 
