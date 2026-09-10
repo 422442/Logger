@@ -2,12 +2,6 @@ name = "quantum-c2-worker"
 main = "worker.ts"
 compatibility_date = "2024-01-01"
 
-[[routes]]
-pattern = "quantum-c2-*.username.workers.dev/*"
-
 [vars]
-API_KEY = "REPLACE_WITH_API_KEY"
-BACKEND_URL = "REPLACE_WITH_RENDER_URL"
-
-[triggers]
-routes = ["quantum-c2-*.username.workers.dev"]
+API_KEY = "QC-ELITE-VIPER-KEY-2024-REPLACE-ME"
+BACKEND_URL = "https://REPLACE_WITH_RENDER_URL"
